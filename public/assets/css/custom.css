@@ -1,0 +1,109 @@
+.hero .hero-slider p {
+    font-size: 1.32rem !important;
+    margin-bottom: 30px;
+}
+
+#picBox, #picBox2 {
+    display: flex;
+  }
+  #picBox img {
+      max-width: 100%;
+      height: 300px;
+      width: 25%;
+      object-fit: cover;
+      object-position: 40% 37%;
+  }
+  .picture{
+    width: 70px; 
+    height: 55px;
+  }
+  
+  #picBox2 img {
+      max-width: 100%;
+      height: 300px;
+      width: 20%;
+      object-fit: cover;
+      object-position: 77% 37%;
+  }
+  #main-navbar .btn-sign-up:hover {
+    padding: 8.4px 36px;
+    font-size: 1rem;
+    color: white;
+}
+
+  @media only screen and (max-width: 800px) {
+    #picBox, #picBox2 {
+        display: block !important;
+    }
+
+    #picBox img {
+        width: 100% !important;
+    }
+    
+    #picBox2 img {
+        width: 100% !important;
+    }
+  }
+  #main-navbar .nav-link {
+    padding-right: 9.6px;
+    padding-left: 9.6px;
+    font-size: 19px;
+      }
+
+  @media only screen and (max-width: 600px) {
+    #picBox, #picBox2 {
+        display: block !important;
+    }
+
+    #picBox img {
+        width: 100% !important;
+    }
+    
+    #picBox2 img {
+        width: 100% !important;
+    }
+
+    #solutions .particle-wave {
+        z-index: 0 !important;
+    }
+  }
+  .follow-us{
+      margin-bottom: 200px;
+  }
+  .navbar-nav{
+    font-size: 90px;
+  }
+  .navbar-expand-md .navbar-nav {
+    flex-direction: row;
+
+   
+  
+}
+@media only screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: row;
+        font-size: 55px;   
+}
+}
+@media only screen and (max-width: 600px) {
+    .navbar-expand-md .navbar-nav {
+        flex-direction: column;
+       margin-left: 5%;     
+}
+}
+@media (min-width: 576px){
+#main-navbar .nav-link {
+    padding-right: 9.6px;
+    padding-left: 9.6px;
+    font-size: 16px;
+      }
+}
+
+@media all and (min-width: 992px) {
+	.navbar .dropdown-menu-end{ right:0; left: auto;  }
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:180%;  }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}	

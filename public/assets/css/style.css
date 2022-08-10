@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+@font-face {
+    font-family: "Gotham Rounded";
+    src: url(assets/fonts/GothamRounded-Medium.woff2),
+        url(assets/fonts/GothamRounded-Medium.woff),
+        url(assets/fonts/GothamRounded-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+#hero {
+    width: 100%;
+    position: relative;
+    top: 65px;
+    padding: 120px 0 0 0;
+}
+
+p {
+    font-family: 'maven pro'sans-serif !important;
+    font-size: 18px;
+    font-weight: 400;
+
+    margin: 0px;
+    text-align: left;
+}
+
+#hero:before {
+    content: "";
+    background: url('assets/img/delivery/team.png');
+
+    position: absolute;
+    bottom: 20px;
+    top: 0px;
+    left: 0;
+    right: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Gotham Rounded', sans-serif !important;
+    font-weight: 700;
+    margin: 0px;
+    color: #263238;
+}
+
+#hero h1 {
+    margin: 0 0 20px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#hero h1 span {
+    color: #fff;
+    border-bottom: 4px solid #ffffff;
+}
+
+.iframe {
+    display: none;
+}
+
+#hero h2 {
+    color: black;
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'maven pro', sans-serif, monospace;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+#hero .btn-get-started {
+    margin-top: 5%;
+    font-family: "maven pro", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: #000000;
+}
+
+#hero .btn-get-started:hover {
+    background: #feffff;
+    color: #ff0030;
+}
+
+#hero .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 991px) {
+    #hero {
+        padding-top: 80px;
+    }
+
+    #hero .animated {
+        -webkit-animation: none;
+        animation: none;
+    }
+
+    #hero .hero-img {
+        text-align: center;
+    }
+
+    #hero .hero-img img {
+        max-width: 50%;
+    }
+
+    #hero h1 {
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+
+    #hero h2 {
+        font-size: 16px;
+        font-family: 'Maven pro';
+        font-weight: 100;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    #hero .hero-img img {
+        width: 80%;
+    }
+}
+
+@-webkit-keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.hero-waves {
+    display: block;
+    background: #e81c45;
+    margin-top: 60px;
+    width: 100%;
+    height: 60px;
+    z-index: 5;
+    position: relative;
+}
+
+.wave1 use {
+    -webkit-animation: move-forever1 10s linear infinite;
+    animation: move-forever1 10s linear infinite;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+.wave2 use {
+    -webkit-animation: move-forever2 8s linear infinite;
+    animation: move-forever2 8s linear infinite;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+.wave3 use {
+    -webkit-animation: move-forever3 6s linear infinite;
+    animation: move-forever3 6s linear infinite;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+@-webkit-keyframes move-forever1 {
+    0% {
+        transform: translate(85px, 0%);
+    }
+
+    100% {
+        transform: translate(-90px, 0%);
+    }
+}
+
+@keyframes move-forever1 {
+    0% {
+        transform: translate(85px, 0%);
+    }
+
+    100% {
+        transform: translate(-90px, 0%);
+    }
+}
+
+@-webkit-keyframes move-forever2 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+@keyframes move-forever2 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+@-webkit-keyframes move-forever3 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+@keyframes move-forever3 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+.testimonials {
+    padding: 80px 0;
+    background: url("../img/cta-bg.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.testimonials::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(1, 3, 111, 0.8);
+}
+
+.testimonials .section-header {
+    margin-bottom: 40px;
+}
+
+.testimonials .testimonial-item {
+    text-align: center;
+    color: #fff;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+    width: 100px;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.15);
+    margin: 0 auto;
+}
+
+.testimonials .testimonial-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #fff;
+}
+
+.testimonials .testimonial-item h4 {
+    font-size: 14px;
+    color: #ddd;
+    margin: 0 0 15px 0;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 26px;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+    display: inline-block;
+    left: -5px;
+    position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+    display: inline-block;
+    right: -5px;
+    position: relative;
+    top: 10px;
+}
+
+.testimonials .testimonial-item p {
+    font-style: italic;
+    margin: 0 auto 15px auto;
+    color: #eee;
+}
+
+.testimonials .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #1acc8d;
+}
+
+@media (max-width: 1024px) {
+    .testimonials {
+        background-attachment: fixed;
+    }
+
+    .deskt {
+        text-align: center;
+        padding-top: 414px;
+        color: white;
+        font-size: 50px !important;
+    }
+}
+
+
+@media (min-width: 767px) {
+    p.deskt {
+        text-align: center;
+        padding-top: 261px;
+        color: white;
+        font-size: 36px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .testimonials {
+        background-attachment: fixed;
+    }
+
+    .deskt {
+        text-align: center;
+        padding-top: 480px;
+        color: white;
+        font-size: 50px !important;
+    }
+}
+
+
+
+@media (max-width: 450px) {
+    .testimonials .testimonial-item p {
+        width: 88%;
+    }
+    button.btn.btn-lg {
+        margin-left: 43% !important;
+    }
+
+    p.deskt {
+        text-align: center;
+        padding-top: 65px !important;
+        color: white;
+        font-size: 20px !important;
+    }
+
+   a.btn.desk{
+    font-family: 'maven pro'!important;
+    border: 0px solid white !important;
+    margin-left: 6% !important;
+    color: #ffffff;
+   }
+}
